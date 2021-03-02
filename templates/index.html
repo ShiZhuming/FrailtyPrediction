@@ -73,12 +73,24 @@
                     <!-- 以下是填写信息表的内容,从这里开始增加项目 -->
                     
                     <!-- 下面添加项目时可以直接复制一段div,然后改 -->
-                    <!-- 第1种情况,连续型变量 -->
+                    <!-- 第0种情况,连续型整数变量 -->
                     <div class="form-group">
                         <label class="col-sm-2 control-label">年龄</label><!-- 把"年龄"改成项目名称,比如"性别" -->
                         <div class="col-sm-10">
                             <input type="number" name="age" class="form-control" placeholder="请填写整数，如:70">
                             <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填整数" -->
+                        </div>
+                    </div>
+                    <!-- 第0种情况结束 -->
+
+                    <!-- 第1种情况,连续型浮点数变量 -->
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">腰围</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" max="100.0" step="0.1"
+                                name="waist" class="form-control" placeholder="请填写精确到1位小数，单位为cm，如:60.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
                         </div>
                     </div>
                     <!-- 第1种情况结束 -->
