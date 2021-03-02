@@ -69,29 +69,42 @@
                     <br />
                 </div>
                 <form action="/submit" method="GET" class="form-horizontal" role="form">
+                    
+                    <!-- 以下是填写信息表的内容,从这里开始增加项目 -->
+                    
+                    <!-- 下面添加项目时可以直接复制一段div,然后改 -->
+                    <!-- 第1种情况,连续型变量 -->
                     <div class="form-group">
-                        <label for="age" class="col-sm-2 control-label">年龄</label>
+                        <label class="col-sm-2 control-label">年龄</label><!-- 把"年龄"改成项目名称,比如"性别" -->
                         <div class="col-sm-10">
                             <input type="number" name="age" class="form-control" placeholder="请填写整数，如:70">
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填整数" -->
                         </div>
                     </div>
+                    <!-- 第1种情况结束 -->
+
+                    <!-- 第2种情况，选项不多的离散型变量 -->
                     <div class="form-group">
-                        <label for="gender" class="col-sm-2 control-label">性别</label>
+                        <label class="col-sm-2 control-label">性别</label><!-- 改"性别" -->
                         <div class="col-sm-10">
-                            <label class="radio-inline">
-                                <input type="radio" name="gender" value=0 checked> 男
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="gender" value=1> 女
-                            </label>
+                            <select name="gender"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取0，女取1，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=0>男</option>
+                                <option value=1>女</option>
+                            </select>
                         </div>
                     </div>
+                    <!-- 第2种情况结束 -->
+
+                    <!-- 第3种情况,选项很多的离散型变量,比如56个民族,这个你留个空写条注释,留给我来写js吧 -->
                     <div class="form-group">
-                        <label for="nationality" class="col-sm-2 control-label">民族</label>
+                        <label class="col-sm-2 control-label">民族</label>
                         <div class="col-sm-10">
                             <select id="nation" name="nationality"></select>
                         </div>
                     </div>
+
+                    <!-- 填写信息表结束,下面是提交按钮等,不要改动 -->
 
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
