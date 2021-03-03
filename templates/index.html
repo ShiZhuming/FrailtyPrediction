@@ -83,11 +83,384 @@
                     </div>
                     <!-- 第0种情况结束 -->
 
-                    <!-- 第1种情况,连续型浮点数变量 -->
+                    <!-- 第2种情况，选项不多的离散型变量 -->
                     <div class="form-group">
+                        <label class="col-sm-2 control-label">性别</label><!-- 改"性别" -->
+                        <div class="col-sm-10">
+                            <select name="gender"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>男</option>
+                                <option value=0>女</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">民族</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="nationality"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>汉族</option>
+                                <option value=0>其他</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">物质财富</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="pw"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>0-3项资产</option>
+                                <option value=2>4-5项资产</option>
+                                <option value=3>6-17项资产</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">住房所有权</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="ht"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>所有/部分所有</option>
+                                <option value=0>非所有</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">受教育程度</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="education"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>未受过教育</option>
+                                <option value=2>未读完小学</option>
+                                <option value=3>小学毕业</option>
+                                <option value=4>初中毕业</option>
+                                <option value=5>高中及以上</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">婚姻状况</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="marital"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>已婚/同居</option>
+                                <option value=2>丧偶</option>
+                                <option value=3>其他</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">目前居住状况</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="living"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>独居</option>
+                                <option value=0>共同居住</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">医疗保险</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="insurance"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>城镇职工医疗保险</option>
+                                <option value=2>城镇居民医疗保险</option>
+                                <option value=3>新型农村合作医疗</option>
+                                <option value=4>其他保险</option>
+                                <option value=5>无保险</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">职业</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="occupation"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>农业工作</option>
+                                <option value=0>非农业工作</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">居住地</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="residents"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>农村</option>
+                                <option value=0>城镇社区</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">视力情况</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="vision"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>视力差</option>
+                                <option value=0>视力好</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">听力情况</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="hearing"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>听力差</option>
+                                <option value=0>听力好</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否ADL残疾</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="ADL"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否IADL残疾</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="IADL"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否有脑卒中史</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="stroke"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有高血压</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="hypertension"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有糖尿病</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="diabetes"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有肺部疾病</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="lung"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有肾脏疾病</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="kidney"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有心血管疾病</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="heart"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有肝脏疾病</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="liver"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有消化系统疾病</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="digestive"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有癌症</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="cancer"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有关节炎或风湿病</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="arthritis"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有两种及以上慢性病（高血压、糖尿病、血脂异常、心脏病、脑卒中、癌症、慢性肺部疾病、消化系统疾病、肝病、肾脏疾病和关节炎）</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="cd_num_2"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">过去两年是否有跌倒</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="fall"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">下肢功能是否受限</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="l_functional"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">上肢功能是否受限</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="u_functional"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否患有与记忆相关的疾病（包括痴呆及其他）</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="memory"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否有过髋骨骨折</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="hip"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否做过白内障手术</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="c_surgery"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否有疼痛</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="pain"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">自评健康状况</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="health"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>好</option>
+                                <option value=2>一般</option>
+                                <option value=3>不好</option>
+                            </select>
+                        </div>
+                    </div>
+
+                     <!-- 第1种情况,连续型浮点数变量 -->
+                     <div class="form-group">
                         <label class="col-sm-2 control-label">腰围</label><!-- 改"腰围" -->
                         <div class="col-sm-10">
-                            <input type="number" min="0.0" max="100.0" step="0.1"
+                            <input type="number" min="0.0" max="200.0" step="0.1"
                                 name="waist" class="form-control" placeholder="请填写精确到1位小数，单位为cm，如:60.1">
                             <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
                             <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
@@ -95,26 +468,253 @@
                     </div>
                     <!-- 第1种情况结束 -->
 
-                    <!-- 第2种情况，选项不多的离散型变量 -->
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">性别</label><!-- 改"性别" -->
+                        <label class="col-sm-2 control-label">平衡测试得分</label><!-- 把"年龄"改成项目名称,比如"性别" -->
                         <div class="col-sm-10">
-                            <select name="gender"><!-- 把name的值改成变量名 -->
-                                <!-- 下面是取值列表，一对一对改，比如男取0，女取1，按照之前约定的从0开始还是从1开始等 -->
-                                <option value=0>男</option>
-                                <option value=1>女</option>
+                            <input type="number" name="balance" class="form-control" placeholder="请填写整数，如:2">
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填整数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">椅子站起测试得分</label><!-- 把"年龄"改成项目名称,比如"性别" -->
+                        <div class="col-sm-10">
+                            <input type="number" name="chair_stand" class="form-control" placeholder="请填写整数，如:2">
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填整数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">牙齿是否完全脱落</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="teeth"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
                             </select>
                         </div>
                     </div>
-                    <!-- 第2种情况结束 -->
 
-                    <!-- 第3种情况,选项很多的离散型变量,比如56个民族,这个你留个空写条注释,留给我来写js吧 -->
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">民族</label>
+                        <label class="col-sm-2 control-label">过去一年是否曾住院治疗</label><!-- 多 -->
                         <div class="col-sm-10">
-                            <select id="nation" name="nationality"></select>
+                            <select name="hospitalization"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">社交活动数量</label><!-- 把"年龄"改成项目名称,比如"性别" -->
+                        <div class="col-sm-10">
+                            <input type="number" name="sa_num" class="form-control" placeholder="请填写整数，如:2">
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填整数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">目前吸烟状况</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="smoking"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>当前吸烟</option>
+                                <option value=2>以前吸烟</option>
+                                <option value=3>从未吸烟</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">饮酒状况</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="drinking"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>当前饮酒者（高频率）</option>
+                                <option value=2>当前饮酒者</option>
+                                <option value=3>戒酒综合征</option>
+                                <option value=4>以前饮酒者</option>
+                                <option value=5>从不饮酒者</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否为长夜间睡眠（＞8小时）</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="sleep_time"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">社会活动</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="s_activities"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>总分为0</option>
+                                <option value=2>总分为1-2</option>
+                                <option value=3>总分≥3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">智力活动</label><!-- 民族赋值为汉族和其他了，不是多分类 -->
+                        <div class="col-sm-10">
+                            <select name="i_activities"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>总分为0</option>
+                                <option value=2>总分为1-2</option>
+                                <option value=3>总分≥3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">是否抑郁</label><!-- 多 -->
+                        <div class="col-sm-10">
+                            <select name="depression"><!-- 把name的值改成变量名 -->
+                                <!-- 下面是取值列表，一对一对改，比如男取1，女取0，按照之前约定的从0开始还是从1开始等 -->
+                                <option value=1>是</option>
+                                <option value=0>否</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">情节记忆得分</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" max="10.0" step="0.1"
+                                name="e_memory" class="form-control" placeholder="请填写精确到1位小数，如:5.5">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">精神完整性得分</label><!-- 把"年龄"改成项目名称,比如"性别" -->
+                        <div class="col-sm-10">
+                            <input type="number" name="m_intactness" class="form-control" placeholder="请填写整数，如:2">
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填整数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">整体认知得分</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" max="21.0" step="0.1"
+                                name="g_cognitive" class="form-control" placeholder="请填写精确到1位小数，如：10.5">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">甘油三酯</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="newtg" class="form-control" placeholder="请填写精确到1位小数，%，如:135.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">糖化血红蛋白水平（%）</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" max="100.0" step="0.1"
+                                name="newhba1c" class="form-control" placeholder="请填写精确到1位小数，如:4.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">血红蛋白</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="qc1_vb004" class="form-control" placeholder="请填写精确到1位小数，单位为g/dL，如:14.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">胱抑素C</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="newcrea" class="form-control" placeholder="请填写精确到1位小数，单位为mg/L，如:1.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">C反应蛋白（CRP）</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="newcrp" class="form-control" placeholder="请填写精确到1位小数，单位为mg/L，如:1.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">低密度脂蛋白胆固醇（LDL）</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="newldl" class="form-control" placeholder="请填写精确到1位小数，单位为mg/dL，如:112.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">高密度脂蛋白胆固醇（HDL）</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="newhdl" class="form-control" placeholder="请填写精确到1位小数，单位为mg/dL，如:49.5">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">白细胞计数（千）</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="qc1_vb002" class="form-control" placeholder="请填写精确到1位小数，单位为cm，如:6.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">总胆固醇</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="newcho" class="form-control" placeholder="请填写精确到1位小数，单位为mg/dL，如:190.1">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">血清尿酸浓度</label><!-- 改"腰围" -->
+                        <div class="col-sm-10">
+                            <input type="number" min="0.0" step="0.1"
+                                name="newua" class="form-control" placeholder="请填写精确到1位小数，单位为mg/dL，如:4.6">
+                            <!-- min max控制上下界,step是精确到，两位小数就填0.01以此类推 -->
+                            <!-- 把name的值改成变量名,比如"gender"等,placeholder的值改成提示语句,比如"填1位小数" -->
+                        </div>
+                    </div>
+                
+                    <!-- 第2种情况结束 -->
 
                     <!-- 填写信息表结束,下面是提交按钮等,不要改动 -->
 
@@ -159,17 +759,4 @@
         </footer>
     </body>
 
-    <!-- js -->
-    <script>
-        var nations = ["汉族", "蒙古族", "回族", "藏族", "维吾尔族", "苗族", "彝族", "壮族", "布依族", "朝鲜族", "满族", "侗族", "瑶族", "白族",
-            "土家族", "哈尼族", "哈萨克族", "傣族", "黎族", "傈僳族", "佤族", "畲族", "高山族", "拉祜族", "水族", "东乡族", "纳西族", "景颇族", "柯尔克孜族", "土族", 
-            "达斡尔族", "仫佬族", "羌族", "布朗族", "撒拉族", "毛南族", "仡佬族", "锡伯族", "阿昌族", "普米族", "塔吉克族", "怒族", "乌孜别克族", "俄罗斯族", "鄂温克族", 
-            "德昂族", "保安族", "裕固族", "京族", "塔塔尔族", "独龙族", "鄂伦春族", "赫哲族", "门巴族", "珞巴族", "基诺族"];
-    var option = "";
-    for(var i = 0; i <
-        nations.length; i++) {
-        option += '<option value="' + i + '">' + nations[i] + '</option>';
-    }
-        $(option).appendTo("#nation");
-    </script>
 </html>
